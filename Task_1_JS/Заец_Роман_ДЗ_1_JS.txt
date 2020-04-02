@@ -1,0 +1,498 @@
+
+- присвоить каждому из следующих значений свою переменную: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false Вывести каждую при помощи console.log , alert, document.write
+
+let hello = "hello";
+console.log (hello);
+alert (hello);
+document.write(hello);
+
+let owu = "owu";
+console.log (owu);
+alert (owu);
+document.write(owu);
+
+let ua = "ua";
+console.log (ua);
+alert (ua);
+document.write(ua);
+
+let num1 = 1;
+console.log (num1);
+alert (num1);
+document.write(num1);
+
+let num2 = 10;
+console.log (num2);
+alert (num2);
+document.write(num2);
+
+let num3 = -999;
+console.log (num3);
+alert (num3);
+document.write(num3);
+
+let num4 = 123;
+console.log (num4);
+alert (num4);
+document.write(num4);
+
+let num5 = 3.14;
+console.log (num5);
+alert (num5);
+document.write(num5);
+
+let num6 = 2.7;
+console.log (num6);
+alert (num6);
+document.write(num6);
+
+let num7 = 16;
+console.log (num7);
+alert (num7);
+document.write(num7);
+
+let pravda = true;
+console.log (pravda);
+alert (pravda);
+document.write(pravda);
+
+let obman = false;
+console.log (obman);
+alert (obman);
+document.write(obman);
+
+- переопределить каждую переменную из задания 1 дав им произвольные значения Вывести каждую при помощи console.log , alert, document.write
+
+let hello = "hello";
+hello = 2;
+console.log (hello);
+alert (hello);
+document.write(hello);
+
+let owu = "owu";
+owu = 2.2;
+console.log (owu);
+alert (owu);
+document.write(owu);
+
+let ua = "ua";
+ua = "com";
+console.log (ua);
+alert (ua);
+document.write(ua);
+
+let num1 = 1;
+num1 = -20;
+console.log (num1);
+alert (num1);
+document.write(num1);
+
+let num2 = 10;
+num2 = true;
+console.log (num2);
+alert (num2);
+document.write(num2);
+
+let num3 = -999;
+num3 = 1.233;
+console.log (num3);
+alert (num3);
+document.write(num3);
+
+let num4 = 123;
+num4 = "home";
+console.log (num4);
+alert (num4);
+document.write(num4);
+
+let num5 = 3.14;
+num5 = false;
+console.log (num5);
+alert (num5);
+document.write(num5);
+
+let num6 = 2.7;
+num6 = 30;
+console.log (num6);
+alert (num6);
+document.write(num6);
+
+let num7 = 16;
+num7 = "bag";
+console.log (num7);
+alert (num7);
+document.write(num7);
+
+let pravda = true;
+pravda = 90;
+console.log (pravda);
+alert (pravda);
+document.write(pravda);
+
+let obman = false;
+obman = "obman"
+console.log (obman);
+alert (obman);
+document.write(obman);
+
+- Создать 3 числовых и 3 стринговых константы. Вывести каждую при помощи console.log , alert, document.write
+
+const num1 = 10;
+console.log(num1);
+document.write(num1);
+alert(num1);
+
+const num2 = 2.22;
+console.log(num2);
+document.write(num2);
+alert(num2);
+
+const num3 = -20;
+console.log(num3);
+document.write(num3);
+alert(num3);
+
+const string1 = "Hello";
+console.log(string1);
+document.write(string1);
+alert(string1);
+
+const string2 = "World";
+console.log(string2);
+document.write(string2);
+alert(string2);
+
+const string3 = "Hello World";
+console.log(string3);
+document.write(string3);
+alert(string3);
+
+- при помощи 3х разных prompt() получить 3 слова которые являются вашими ФИО. Для фамилии имени и отчества создать разные переменные. Вывести каждую при помощи console.log , alert, document.write
+
+let name = prompt("Введите ваше имя:");
+console.log(name);
+document.write(name);
+alert(name);
+
+let surname = prompt("Введите вашу фамилию:");
+console.log(surname);
+document.write(surname);
+alert(surname);
+
+let patronymic = prompt("Введите ваше отчество:");
+console.log(patronymic);
+document.write(patronymic);
+alert(patronymic);
+
+- Взять переменные из задания 4 и сконкатенировать их в одной переменной person.
+
+let name = prompt("Введите ваше имя:");
+let surname = prompt("Введите вашу фамилию:");
+let patronymic = prompt("Введите ваше отчество:");
+let person = name + " " + surname + " " + patronymic;
+
+console.log(person);
+document.write(person);
+alert(person);
+
+- Взять задние 4 и 5 и применить его к ФИО всех членов своей семьи.
+
+let myName = prompt("Введите ваше имя:");
+let mySurname = prompt("Введите вашу фамилию:");
+let myPatronymic = prompt("Введите ваше отчество:");
+let myPerson = myName + " " + mySurname + " " + myPatronymic;
+
+let wifeName = prompt("Введите имя вашей жены:");
+let wifeSurname = prompt("Введите фамилию вашей жены:");
+let wifePatronymic = prompt("Введите отчество вашей жены:");
+let wifePerson = wifeName + " " + wifeSurname + " " + wifePatronymic;
+
+let personsHtml = "Я: " + myPerson + "<br> Моя жена: " + wifePerson;
+let persons = "Я: " + myPerson + "Моя жена: " + wifePerson;
+
+console.log(persons);
+document.write(personsHtml);
+alert(persons);
+
+- при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.
+
+let num1 = +prompt("Введите число:");
+let num2 = +prompt("Введите число:");
+let num3 = +prompt("Введите число:");
+
+console.log(num1, num2, num3);
+
+- при помощи prompt() получить 4 числа. Привести их к числовому типу при помощи parseInt. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+
+let num1 = prompt("Введите число:");
+let num2 = prompt("Введите число:");
+let num3 = prompt("Введите число:");
+let num4 = prompt("Введите число:");
+let result = parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4);
+
+console.log(result);
+
+- при помощи prompt()  получить 3 числа с плавающей точекой. при помощи parseFloat привести их к соответсвующему типу. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+
+let num1 = prompt("Введите число:");
+let num2 = prompt("Введите число:");
+let num3 = prompt("Введите число:");
+let result = parseFloat(num1)+parseFloat(num2)+parseFloat(num3);
+
+console.log(result);
+
+- при помощи prompt()  получить 3 числа с плавающей точекой. Округлить их при помощи Math.round Сложить их между собой записав результат в переменную  и вывести в консоль браузера
+
+let num1 = prompt("Введите число:");
+let num2 = prompt("Введите число:");
+let num3 = prompt("Введите число:");
+let result = Math.round(num1)+Math.round(num2)+Math.round(num3);
+
+console.log(result);
+
+- при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу. Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью. При помощи Math.pow возвести первое число в степень второго числа.
+
+let num1 = +prompt("Введите число:");
+let num2 = +prompt("Введите число:");
+let result = Math.pow(num1, num2);
+
+console.log(result);
+
+- При помощи оператора опредеоения типа typeof определить типы следующих переменных и вывести их в консоль let a = 100; let b = '100'; let c = true; let d = undefined;
+
+let a = 100;
+let b = '100';
+let c = true;
+let d = undefined;
+
+resultA = typeof a;
+resultB = typeof b;
+resultC = typeof c;
+resultD= typeof d;
+
+
+console.log(resultA, resultB, resultC, resultD);
+
+- Поставьте соответствующий оператор в выражениях что бы получился соответсвующий результат.
+ В одинаковых выражениях в задании не использовать два одинаковых оператора.
+Каждое выражение вложить в свою переменную
+    5 < 6 -> true
+    5 > 6 -> false
+    5 == 6 -> false
+    5 >= 6 -> false
+    10 === 10 -> true
+    10 <= 10 -> true
+    10 > 10 -> false
+    10 != 10 -> false
+    10 > 10 -> false
+    123 === '123' -> false
+    123 == '123' -> true
+
+Дополнительно:
+- Посмотрев на следюующие выражения, скажите, каков будет вывод в консоль
+console.log(132 > 100 && 45 < 12 ); false
+console.log(34 > 33 && 23 < 90 ); true
+console.log(99 > 100 && 45 > 12 ); false
+console.log(132 > 100 || 45 < 12 ); true
+console.log(111 > 11 || 45 < 111 ); true
+console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) ); true
+console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) ); true
+console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) ); false
+console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 )); true
+console.log(!!'-1'); true
+console.log(!!-1); true
+console.log(!!'0'); true
+console.log(!!'null'); true
+console.log(!!'undefined'); true
+console.log(!!(3/'owu')); false
+console.log((111 > 11 || 45 < 111) ||  !!'0'); true
+console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); false
+
+
+Дан массив:
+let users = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+   ];
+- обратиться в соответсвующую ячейку массива и соответсвующий параметр объекта и вывести в консоль
+Пример : вывести имя 1го объекта . Ответ : console.log(users[0].name). Будьте внимательны! 4й объект имеет индес 3!
+
+-- статус Андрея
+console.log(users[7].status);
+-- статус Максима
+console.log(users[4].status);
+-- имя предпоследнего объекта
+console.log(users[10].name);
+-- имя третьего объекта
+console.log(users[2].name);
+-- возраст Олега
+console.log(users[6].age);
+-- возраст Оли
+console.log(users[9].age);
+-- возраст + имя 5го объекта 
+console.log(users[4].age + " " + users[4].name);
+-- возраст + сатус ани 
+console.log(users[5].age + " " + users[5].status);
+
+-Возьмите файл task1_template.html, подключите к нему скрипт, и работайте в нем.
+Напишите код, который :
+
+-- получает текст из параграфа с id "content"
+let text = document.getElementById("content").textContent;
+-- получает текст из блока  с id "rules"
+let text = document.getElementById("rules").textContent;
+-- замените текст параграфа с id 'content' на любой другой
+let text = document.getElementById("content").textContent = "Hello World!";
+-- замените текст параграфа с id 'rules' на любой другой
+let text = document.getElementById("rules").textContent = "Hello World!";
+-- поменятй каждому элементу цвет фона на красный
+let text1 = document.getElementById("content").style.backgroundColor = "red";
+let text2 = document.getElementById("rules").style.backgroundColor = "red";
+let text3 = document.getElementsByTagName("ul");
+text3[0].style.backgroundColor = "red";
+-- поменятй каждому элементу цвет текста на синий
+let text1 = document.getElementById("content").style.color = "blue";
+let text2 = document.getElementById("rules").style.color = "blue";
+let text3 = document.getElementsByTagName("ul");
+text3[0].style.color = "blue";
+-- получить весь список классов элемента id = rules и вывести в console.log()
+let = listId = document.getElementById("rules").className;
+console.log(listId);
+-- получить все элементы с классом fc_rules
+let = list = document.getElementsByClassName('fc_rules');
+console.log(list);
+-- поменять цвет текста у всех элементов fc_rules на красный
+let text = document.getElementsByClassName("fc_rules");
+text[0].style.color = "red";
+text[1].style.color = "red";
+text[2].style.color = "red";
+text[3].style.color = "red";
+
+CLASS
+
+1.Определите переменные str, num, flag и txt со значениями «Привет», 123, true, «true».
+  При помощи оператора typeof убедитесь, что значения переменных принадлежат типам: string, number и  boolean.
+
+let str = typeof "Привет";
+let num = typeof 123;
+let flag = typeof true;
+let txt = typeof "true";
+
+console.log(str, num, flag, txt);
+
+2. Создайте переменные a1, a2, a3, a4, a5. При помощи математических операторов (сложение, вычитание и т.д.) найдите значения выражений:
+    5 + 3,
+    5 - 3,
+    5 * 3,
+    5 / 3,
+    5 % 3
+    поместив результат каждого выражения в соответствующую переменную. Например, let a1 = 5 + 3.
+
+let a1 = 5 + 3;
+let a2 = 5 - 3;
+let a3 = 5 * 3;
+let a4 = 5 / 3;
+let a5 = 5 % 3;
+
+console.log(a1, a2, a3, a4, a5);
+
+3.  Создайте переменные a6, a7, a8, a9, a10. Поместите в них результат выражений:
+    5 % 3,
+    3 % 5,
+    5 + '3',
+    '5' - 3,
+    75 + 'кг'
+
+let a6 = 5 % 3;
+let a7 = 3 % 5;
+let a8 = 5 + '3';
+let a9 = '5' - 3;
+let a10 = 75 + 'кг';
+
+console.log(a6, a7, a8, a9, a10);
+
+4. Напишите код, который находит площадь прямоугольника высота 23см. ( переменная height),
+  шириной 10см (переменная width), значение площади должно хранится в числовой переменной s.
+
+let height = 23;
+let width = 10;
+let s = height*width;
+
+5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+результат поместите в переменную v.
+
+let heightC = 10;
+let dC = 4;
+let v = heightC*3.14*Math.pow((dC /2), 2);
+
+6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+  Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
+
+let n = 3;
+let m = 4;
+let k = Math.sqrt((Math.pow(n, 2) + Math.pow(m, 2)));
+
+7. Напишите скрипт, который выводит "Hello world", создавши переменную str и выводить спомощью document.write, alert и console.log
+
+let str = "Hello world";
+
+console.log(str);
+document.write(str);
+alert(str);
+
+8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби (каждой на новой строки спомощью \n).
+
+alert("Заец Роман Александрович\n30 лет\nХобби: футбол");
+
+9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
+  Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
+  Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
+  Вывести в документ содержимое переменной concatenation спомощью document.write
+
+let str1 = "Кто ";
+let str2 = "ты ";
+let str3 = "такой?";
+let concatenation = str1 + str2 + str3;
+
+document.write(concatenation);
+
+10. Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    let str = "20";
+     let a = 5;
+     document.write(str + a + "<br/>"); 205 так как str, это текст, то JS при сложении считает, что нужно добавить текст
+     document.write(str - a + "<br/>"); 15 хоть и str, это текст, но так как идет отнимание, то считает, что нужно преобразовать str в числовое значение
+     document.write(str * "2" + "<br/>"); 40 хоть и str, это текст, но так как идет умножение, то считает, что нужно преобразовать str в числовое значение
+     document.write(str / 2 + "<br/>"); 10 хоть и str, это текст, но так как идет деление, то считает, что нужно преобразовать str в числовое значение
+
+11. Какие значения выведет в окно консоли следующий фрагмент кода если его поместить в console.log?
+    parseInt("3.14") будет 3
+    parseInt("-7.875") будет -7
+    parseInt("435") будет 435
+    parseInt("Вася") будет NaN
+
+12.  С помощью окна ввода, вызываемого методом prompt, пользователь может ввести данные, которые будут использоваться далее, повторите код ниже
+    let str = prompt("Enter something", "ho-ho")
+    console.log(str);
+
+13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел, а вывод результата при помощи метода alert
+
+let str1 = +prompt("Веедите чило:");
+let str2 = +prompt("Веедите чило:");
+alert(str1+str2);
+
+14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и возраст, а вам не обходимо вывести строку такого вида
+      Доброго вечера Иван Иванов, мои поздравления что вам 32 , а вывод результата при помощи метода alert
+
+let name = prompt("Введите ваше имя:");
+let surname = prompt("Введите вашу фамилию:");
+let age = +prompt("Сколько вам лет:");
+alert("Доброго вечера " + name +" " + surname + ", мои поздравления что вам " + age);
