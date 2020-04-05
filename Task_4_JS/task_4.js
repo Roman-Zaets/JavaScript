@@ -238,68 +238,68 @@
 
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 
-let cars = [
-    Renault = {
-        model: "Renault Clio",
-        year: 2009,
-        motor: "petrol",
-        color: "red"
-    },
-    Honda = {
-        model: "Honda Accord",
-        year: 2017,
-        motor: "diesel",
-        color: "white"
-    },
-    Chevrolet = {
-        model: "Chevrolet Volt",
-        year: 2020,
-        motor: "electric",
-        color: "green"
-    },
-    Fiat = {
-        model: "Fiat Tipo",
-        year: 2018,
-        motor: "diesel",
-        color: "blue"
-    },
-    Ford = {
-        model: "Ford Focus",
-        year: 2010,
-        motor: "petrol",
-        color: "black"
-    },
-    KIA = {
-        model: "KIA Ceed",
-        year: 2012,
-        motor: "petrol",
-        color: "pink"
-    },
-    Hyundai = {
-        model: "Hyundai i30",
-        year: 2015,
-        motor: "electric",
-        color: "grey"
-    },
-    BMW = {
-        model: "BMW X7",
-        year: 2020,
-        motor: "diesel",
-        color: "lime"
-    },
-    Audi = {
-        model: "Audi Q3",
-        year: 2018,
-        motor: "petrol",
-        color: "yellow"
-    },
-    Opel = {
-        model: "Opel Corsa",
-        year: 2008,
-        motor: "diesel",
-        color: "purple"
-    },
-];
+// let cars = [
+//     Renault = {
+//         model: "Renault Clio",
+//         year: 2009,
+//         motor: "petrol",
+//         color: "red"
+//     },
+//     Honda = {
+//         model: "Honda Accord",
+//         year: 2017,
+//         motor: "diesel",
+//         color: "white"
+//     },
+//     Chevrolet = {
+//         model: "Chevrolet Volt",
+//         year: 2020,
+//         motor: "electric",
+//         color: "green"
+//     },
+//     Fiat = {
+//         model: "Fiat Tipo",
+//         year: 2018,
+//         motor: "diesel",
+//         color: "blue"
+//     },
+//     Ford = {
+//         model: "Ford Focus",
+//         year: 2010,
+//         motor: "petrol",
+//         color: "black"
+//     },
+//     KIA = {
+//         model: "KIA Ceed",
+//         year: 2012,
+//         motor: "petrol",
+//         color: "pink"
+//     },
+//     Hyundai = {
+//         model: "Hyundai i30",
+//         year: 2015,
+//         motor: "electric",
+//         color: "grey"
+//     },
+//     BMW = {
+//         model: "BMW X7",
+//         year: 2020,
+//         motor: "diesel",
+//         color: "lime"
+//     },
+//     Audi = {
+//         model: "Audi Q3",
+//         year: 2018,
+//         motor: "petrol",
+//         color: "yellow"
+//     },
+//     Opel = {
+//         model: "Opel Corsa",
+//         year: 2008,
+//         motor: "diesel",
+//         color: "purple"
+//     },
+// ];
 
 // function arrayCars(array, id) {
 //     let idshka = document.getElementById(id);
