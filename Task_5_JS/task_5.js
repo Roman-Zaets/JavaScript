@@ -417,17 +417,17 @@
 //         this.foundFoot = foundFoot;
 //     }
 //
-//     myCinderella() {
-//         for (let i = 0; i < tenCinderells.length; i++) {
-//             if (tenCinderells[i].footSize === this.foundFoot) {
-//                 console.log(`My Cinderella's name is ${tenCinderells[i].name}`)
+//     myCinderella(array) {
+//         for (let i = 0; i < array.length; i++) {
+//             if (array[i].footSize === this.foundFoot) {
+//                 console.log(`My Cinderella's name is ${array[i].name}`)
 //             }
 //         }
 //     }
 // }
 //
 // let prince = new Prince("Roma", 30, 35);
-// prince.myCinderella();
+// prince.myCinderella(tenCinderells);
 
 // ==============================================
 //
@@ -465,14 +465,14 @@
 //     this.age = age;
 //     this.foundFoot = foundFoot;
 //
-//     this.myCinderella = function() {
-//         for (let i = 0; i < tenCinderells.length; i++) {
-//             if (tenCinderells[i].footSize === this.foundFoot) {
-//                 console.log(`My Cinderella's name is ${tenCinderells[i].name}`)
+//     this.myCinderella = function(array) {
+//         for (let i = 0; i < array.length; i++) {
+//             if (array[i].footSize === this.foundFoot) {
+//                 console.log(`My Cinderella's name is ${array[i].name}`)
 //             }
 //         }
 //     }
 // }
 //
 // let prince = new Prince("Kolya", 20, 38);
-// prince.myCinderella();
+// prince.myCinderella(tenCinderells);
