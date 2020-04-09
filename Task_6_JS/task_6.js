@@ -34,7 +34,7 @@
 
 // -- перебрать (проитерировать) массив при помощи foreach()
 
-// let forEachArray = numbers.forEach(num => console.log(num));
+// numbers.forEach(num => console.log(num));
 
 // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
 
@@ -389,18 +389,103 @@
 // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
-// Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
-// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+
+// class Car {
+//     constructor(brand, power, price, years, owner, name, age, drivingExperience) {
+//         this.brand = brand;
+//         this.power = power;
+//         this.price = price;
+//         this.years = years;
+//         this.owner = {name, age, drivingExperience};
+//     }
+//     repairOfMotor() {
+//         this.power += this.power * .1;
+//     }
+//
+//     newOwner(name, age, drivingExperience) {
+//         this.owner = {name, age, drivingExperience};
+//     }
+// }
+//
+// let renault = new Car('Renault Clio', 200, 7000, 2009, 'owner', 'Roman', 30, 5);
+// let kia = new Car('Kia Ceed', 250, 10000, 2013, 'owner', 'Kolya', 19, 1);
+// let ford = new Car('Ford Fiesta', 220, 6000, 2007, 'owner', 'Anna', 23, 3);
+// let fiat = new Car('Fiat Tipo', 300, 18000, 2019, 'owner', 'Anton', 27, 8);
+// let audi = new Car('Audi A3', 360, 15000, 2015, 'owner', 'Sasha', 34, 10);
+// let honda = new Car('Honda Accord', 280, 12000, 2015, 'owner', 'Irina', 31, 5);
+// let mercedes = new Car('Mercedes E200', 320, 9000, 1998, 'owner', 'Dima', 49, 21);
+//
+// renault.repairOfMotor();
+// kia.repairOfMotor();
+// ford.repairOfMotor();
+// audi.repairOfMotor();
+//
+// renault.newOwner('Oleg', 42, 20);
+// kia.newOwner('Sergey', 27, 3);
+// ford.newOwner('Vika', 20, 2);
+// audi.newOwner('Andriy', 33, 7);
+//
+// let cars = [renault, kia, ford, fiat, audi, honda, mercedes];
+// console.log(cars);
+
+// Далі необхідно брати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+
+// function increaseEnginePower() {
+//     for (let i = 0; i < cars.length; i+=2) {
+//         cars[i].power += cars[i].power * .1;
+//         cars[i].price += cars[i].price * .05;
+//     }
+// }
+// increaseEnginePower();
+// console.log(cars);
+
+// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25,
+// то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+
+// function validationOfExperience() {
+//     for (let i = 0; i < cars.length; i++) {
+//         if (cars[i].owner.drivingExperience < 5 && cars[i].owner.age > 25) {
+//             cars[i].owner.drivingExperience += 1;
+//         }
+//     }
+// }
+// validationOfExperience();
+// console.log(cars);
+
 // Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
+
+// function costOfCars() {
+//     let moneyNeeded = 0;
+//     for (let i = 0; i < cars.length; i++) {
+//         moneyNeeded += cars[i].price;
+//     }
+//     console.log(`To buy all these machines I need ${moneyNeeded} ye!!!`);
+// }
+// costOfCars();
+
 //
 //
+
 // Задача: дан отсортированный по возрастанию массив целых чисел. Необходимо вернуть наименьший и наибольший индекс заданного элемента.
 // Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
 // Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
-//
 // Пример:
-//     Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
+// Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
 // 1. Key = 1
 // Answer: MinIndex = 0, MaxIndex = 0.
 // 2. Key = 4
 // Answer: MinIndex = 3, MaxIndex = 6.
+
+// let arrayNumbers = [1, 1, 3, 4, 4, 4, 6, 7, 7, 8, 8, 8, 8, 10];
+//
+// function maxAndMinIndex(key) {
+//     let element = arrayNumbers.find(element => element === key);
+//     if (element) {
+//         console.log("MinIndex =", arrayNumbers.indexOf(key));
+//         console.log("MaxIndex =", arrayNumbers.lastIndexOf(key));
+//     } else {
+//         console.log(arrayNumbers.indexOf(key));
+//     }
+// }
+// maxAndMinIndex(4);
+
