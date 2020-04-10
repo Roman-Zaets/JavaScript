@@ -478,6 +478,20 @@
 
 // let arrayNumbers = [1, 1, 3, 4, 4, 4, 6, 7, 7, 8, 8, 8, 8, 10];
 //
+// function maxAndMinIndex(array, element) {
+//     let min = null;
+//     let max = null;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === element) {
+//             if (!min) min = i;
+//             max = i;
+//         }
+//     }
+//     console.log(`MinIndex = ${min}, MaxIndex = ${max}`);
+// }
+//
+// maxAndMinIndex(arrayNumbers, 4);
+
 // function maxAndMinIndex(key) {
 //     let element = arrayNumbers.find(element => element === key);
 //     if (element) {
