@@ -261,6 +261,7 @@
 // let divFilter = document.getElementById('filter');
 //
 // cbox1.onclick = () => {
+//     divFilter.innerHTML = '';
 //     for (let i = 0; i < usersWithAddress.length; i++) {
 //         if (usersWithAddress[i].status === false) {
 //             let p = document.createElement('p');
@@ -272,6 +273,7 @@
 // }
 //
 // cbox2.onclick = () => {
+//     divFilter.innerHTML = '';
 //     for (let i = 0; i < usersWithAddress.length; i++) {
 //         if (usersWithAddress[i].status === false && usersWithAddress[i].age > 29) {
 //             let p = document.createElement('p');
@@ -283,6 +285,7 @@
 // }
 //
 // cbox3.onclick = () => {
+//     divFilter.innerHTML = '';
 //     for (let i = 0; i < usersWithAddress.length; i++) {
 //         if (usersWithAddress[i].status === false && usersWithAddress[i].age > 29 && usersWithAddress[i].address.city === 'Kyiv') {
 //             let p = document.createElement('p');
@@ -292,7 +295,6 @@
 //         }
 //     }
 // }
-
 
 // *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
 // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
