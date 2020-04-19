@@ -6,6 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #notebookEdit {
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -47,116 +53,215 @@
 
 <hr>
 
-<form action="#" id="notebook">
+<div id="notebook">
+    <h2><b>РЕГИСТРАЦИЯ</b></h2>
+    <p>Придумайте логин</p>
+    <input type="text" value="" placeholder="Придумайте логин" id="inputLogin"><br>
     <p>ФИО</p>
-    <input type="text" value="" placeholder="Введите ФИО" name="inputFio"><br>
+    <input type="text" value="" placeholder="Введите ФИО" id="inputFio"><br>
     <p>Номер телефона</p>
-    <input type="text" value="" placeholder="Введите номер телефона" name="inputNumber"><br>
+    <input type="text" value="" placeholder="Введите номер телефона" id="inputNumber"><br>
     <p>Почта</p>
-    <input type="text" value="" placeholder="Введите почту" name="inputEmail"><br>
+    <input type="text" value="" placeholder="Введите почту" id="inputEmail"><br>
     <p>Фирма</p>
-    <input type="text" value="" placeholder="Введите фирму" name="inputFirm"><br>
+    <input type="text" value="" placeholder="Введите фирму" id="inputFirm"><br>
     <p>Отдел</p>
-    <input type="text" value="" placeholder="Введите отдел" name="inputOtdel"><br>
+    <input type="text" value="" placeholder="Введите отдел" id="inputOtdel"><br>
     <p>День рождения</p>
-    <select name="selectDay">
+    <select id="selectDay">
         <option value="value1">1</option>
         <option value="value2">2</option>
         <option value="value3">3</option>
-        <option value="value3">4</option>
-        <option value="value3">6</option>
-        <option value="value3">7</option>
-        <option value="value3">8</option>
-        <option value="value3">9</option>
-        <option value="value3">10</option>
-        <option value="value3">11</option>
-        <option value="value3">12</option>
-        <option value="value3">13</option>
-        <option value="value3">14</option>
-        <option value="value3">15</option>
-        <option value="value3">16</option>
-        <option value="value3">17</option>
-        <option value="value3">18</option>
-        <option value="value3">19</option>
-        <option value="value3">20</option>
-        <option value="value3">21</option>
-        <option value="value3">22</option>
-        <option value="value3">23</option>
-        <option value="value3">24</option>
-        <option value="value3">25</option>
-        <option value="value3">26</option>
-        <option value="value3">27</option>
-        <option value="value3">28</option>
-        <option value="value3">29</option>
-        <option value="value3">30</option>
-        <option value="value3">31</option>
+        <option value="value4">4</option>
+        <option value="value5">5</option>
+        <option value="value6">6</option>
+        <option value="value7">7</option>
+        <option value="value8">8</option>
+        <option value="value9">9</option>
+        <option value="value10">10</option>
+        <option value="value11">11</option>
+        <option value="value12">12</option>
+        <option value="value13">13</option>
+        <option value="value14">14</option>
+        <option value="value15">15</option>
+        <option value="value16">16</option>
+        <option value="value17">17</option>
+        <option value="value18">18</option>
+        <option value="value19">19</option>
+        <option value="value20">20</option>
+        <option value="value21">21</option>
+        <option value="value22">22</option>
+        <option value="value23">23</option>
+        <option value="value24">24</option>
+        <option value="value25">25</option>
+        <option value="value26">26</option>
+        <option value="value27">27</option>
+        <option value="value28">28</option>
+        <option value="value29">29</option>
+        <option value="value30">30</option>
+        <option value="value31">31</option>
     </select>
-    <select name="selectMonth">
+    <select id="selectMonth">
         <option value="value1">Январь</option>
         <option value="value2">Февраль</option>
         <option value="value3">Март</option>
-        <option value="value3">Апрель</option>
-        <option value="value3">Май</option>
-        <option value="value3">Июнь</option>
-        <option value="value3">Июль</option>
-        <option value="value3">Август</option>
-        <option value="value3">Сентябрь</option>
-        <option value="value3">Октябрь</option>
-        <option value="value3">Ноябрь</option>
-        <option value="value3">Декабрь</option>
+        <option value="value4">Апрель</option>
+        <option value="value5">Май</option>
+        <option value="value6">Июнь</option>
+        <option value="value7">Июль</option>
+        <option value="value8">Август</option>
+        <option value="value9">Сентябрь</option>
+        <option value="value10">Октябрь</option>
+        <option value="value11">Ноябрь</option>
+        <option value="value12">Декабрь</option>
     </select>
-    <select name="selectYear">
-        <option value="value1">1980</option>
-        <option value="value2">1981</option>
-        <option value="value3">1982</option>
-        <option value="value3">1983</option>
-        <option value="value3">1984</option>
-        <option value="value3">1985</option>
-        <option value="value3">1986</option>
-        <option value="value3">1987</option>
-        <option value="value3">1988</option>
-        <option value="value3">1989</option>
-        <option value="value3">1990</option>
-        <option value="value3">1991</option>
-        <option value="value3">1992</option>
-        <option value="value3">1993</option>
-        <option value="value3">1994</option>
-        <option value="value3">1995</option>
-        <option value="value3">1996</option>
-        <option value="value3">1997</option>
-        <option value="value3">1998</option>
-        <option value="value3">1999</option>
-        <option value="value3">2000</option>
-        <option value="value3">2001</option>
-        <option value="value3">2002</option>
-        <option value="value3">2003</option>
-        <option value="value3">2004</option>
-        <option value="value3">2005</option>
-        <option value="value3">2006</option>
-        <option value="value3">2007</option>
-        <option value="value3">2008</option>
-        <option value="value3">2009</option>
+    <select id="selectYear">
+        <option value="value1980">1980</option>
+        <option value="value1981">1981</option>
+        <option value="value1982">1982</option>
+        <option value="value1983">1983</option>
+        <option value="value1984">1984</option>
+        <option value="value1985">1985</option>
+        <option value="value1986">1986</option>
+        <option value="value1987">1987</option>
+        <option value="value1988">1988</option>
+        <option value="value1989">1989</option>
+        <option value="value1990">1990</option>
+        <option value="value1991">1991</option>
+        <option value="value1992">1992</option>
+        <option value="value1993">1993</option>
+        <option value="value1994">1994</option>
+        <option value="value1995">1995</option>
+        <option value="value1996">1996</option>
+        <option value="value1997">1997</option>
+        <option value="value1998">1998</option>
+        <option value="value1999">1999</option>
+        <option value="value2000">2000</option>
+        <option value="value2001">2001</option>
+        <option value="value2002">2002</option>
+        <option value="value2003">2003</option>
+        <option value="value2004">2004</option>
+        <option value="value2005">2005</option>
+        <option value="value2006">2006</option>
+        <option value="value2007">2007</option>
+        <option value="value2008">2008</option>
+        <option value="value2009">2009</option>
+    </select>
+    <br>
+    <br>
+    <button id="buttonReg">-=РЕГИСТРАЦИЯ=-</button>
+</div>
+
+<br>
+
+<div id="notebookEdit">
+    <h2><b>РЕДАКТИРОВАТЬ ДАННЫЕ</b></h2>
+    <p>Ваш логин</p>
+    <input type="text" value="" placeholder="Придумайте логин" id="inputLoginEdit"><br>
+    <p>Ваше ФИО</p>
+    <input type="text" value="" placeholder="Введите ФИО" id="inputFioEdit"><br>
+    <p>Ваш номер телефона</p>
+    <input type="text" value="" placeholder="Введите номер телефона" id="inputNumberEdit"><br>
+    <p>Ваша почта</p>
+    <input type="text" value="" placeholder="Введите почту" id="inputEmailEdit"><br>
+    <p>Ваша фирма</p>
+    <input type="text" value="" placeholder="Введите фирму" id="inputFirmEdit"><br>
+    <p>Ваш отдел</p>
+    <input type="text" value="" placeholder="Введите отдел" id="inputOtdelEdit"><br>
+    <p>Ваш день рождения</p>
+    <select id="selectDayEdit">
+        <option value="value1">1</option>
+        <option value="value2">2</option>
+        <option value="value3">3</option>
+        <option value="value4">4</option>
+        <option value="value5">5</option>
+        <option value="value6">6</option>
+        <option value="value7">7</option>
+        <option value="value8">8</option>
+        <option value="value9">9</option>
+        <option value="value10">10</option>
+        <option value="value11">11</option>
+        <option value="value12">12</option>
+        <option value="value13">13</option>
+        <option value="value14">14</option>
+        <option value="value15">15</option>
+        <option value="value16">16</option>
+        <option value="value17">17</option>
+        <option value="value18">18</option>
+        <option value="value19">19</option>
+        <option value="value20">20</option>
+        <option value="value21">21</option>
+        <option value="value22">22</option>
+        <option value="value23">23</option>
+        <option value="value24">24</option>
+        <option value="value25">25</option>
+        <option value="value26">26</option>
+        <option value="value27">27</option>
+        <option value="value28">28</option>
+        <option value="value29">29</option>
+        <option value="value30">30</option>
+        <option value="value31">31</option>
+    </select>
+    <select id="selectMonthEdit">
+        <option value="value1">Январь</option>
+        <option value="value2">Февраль</option>
+        <option value="value3">Март</option>
+        <option value="value4">Апрель</option>
+        <option value="value5">Май</option>
+        <option value="value6">Июнь</option>
+        <option value="value7">Июль</option>
+        <option value="value8">Август</option>
+        <option value="value9">Сентябрь</option>
+        <option value="value10">Октябрь</option>
+        <option value="value11">Ноябрь</option>
+        <option value="value12">Декабрь</option>
+    </select>
+    <select id="selectYearEdit">
+        <option value="value1980">1980</option>
+        <option value="value1981">1981</option>
+        <option value="value1982">1982</option>
+        <option value="value1983">1983</option>
+        <option value="value1984">1984</option>
+        <option value="value1985">1985</option>
+        <option value="value1986">1986</option>
+        <option value="value1987">1987</option>
+        <option value="value1988">1988</option>
+        <option value="value1989">1989</option>
+        <option value="value1990">1990</option>
+        <option value="value1991">1991</option>
+        <option value="value1992">1992</option>
+        <option value="value1993">1993</option>
+        <option value="value1994">1994</option>
+        <option value="value1995">1995</option>
+        <option value="value1996">1996</option>
+        <option value="value1997">1997</option>
+        <option value="value1998">1998</option>
+        <option value="value1999">1999</option>
+        <option value="value2000">2000</option>
+        <option value="value2001">2001</option>
+        <option value="value2002">2002</option>
+        <option value="value2003">2003</option>
+        <option value="value2004">2004</option>
+        <option value="value2005">2005</option>
+        <option value="value2006">2006</option>
+        <option value="value2007">2007</option>
+        <option value="value2008">2008</option>
+        <option value="value2009">2009</option>
     </select>
     <br>
     <br>
     <button id="buttonSave">-=СОХРАНИТЬ=-</button>
-</form>
+</div>
 
 <br>
 
-<button id="buttonDel">-=УДАЛИТЬ КОНТАКТ=-</button>
-
-<br>
-<br>
-
-<button id="buttonEdit">-=РЕДАКТИРОВАТЬ=-</button>
-
-<br>
-<br>
-
-<form action="#" id="notebookEdit">
-
-</form>
+<div id="contacts"><b>КОНТАКТЫ</b><br><br>
+    <select id="selectUsers">
+        <option value="value1">Выберете контакт</option>
+    </select>
+    <button id="buttonEdit">-=РЕДАКТИРОВАТЬ=-</button>
+    <button id="buttonDel">-=УДАЛИТЬ КОНТАКТ=-</button>
+</div>
 
 <script src="task_8.js"></script>
 </body>
